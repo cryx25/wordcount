@@ -1,0 +1,12 @@
+<h1>Word Count</h1>
+
+<form action="{%url 'count'%}">{%csrf_token%}
+	<textarea name="fulltext" id="" cols="40" rows="5"></textarea>
+	<br/>
+    <button type='submit' value="Count!" class="btn btn-default"> 
+    Count</button>
+</form>
+
+<form action="{%url 'about'%}">{%csrf_token%}
+    <button type='submit' value="About!" class="btn btn-default">About</button>
+</form>
